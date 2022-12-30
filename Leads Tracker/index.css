@@ -67,3 +67,14 @@ a {
     opacity: 1;
     visibility: visible;
   }
+
+
+  #del{
+    background-color: rgba(230, 15, 11, 0.832);
+    float: right;
+    position: fixed;
+    right: 0;
+    height: 1px;
+    width: 1px;
+    margin: 0%;
+  }
