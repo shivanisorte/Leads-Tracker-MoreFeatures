@@ -69,7 +69,7 @@ a {
   }
 
 
-  #del{
+  .del{
     background-color: rgba(230, 15, 11, 0.832);
     float: right;
     position: fixed;

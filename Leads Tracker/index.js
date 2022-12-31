@@ -5,7 +5,7 @@ const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
-const delIndiv = document.getElementById("del") 
+// const delIndiv = document.getElementById("del") 
 
 
 if (leadsFromLocalStorage) {
@@ -29,11 +29,19 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button id='del'>-</button>
+                <button class='del' onclick='delIndiv(event)'>-</button>
             </li>
         `
     }
     ulEl.innerHTML = listItems
+}
+
+// delIndiv.addEventListener("click", function(event){
+//     console.log
+// })
+
+function delIndiv(event){
+    console.log(event.target)
 }
 
 deleteBtn.addEventListener("dblclick", function() {
