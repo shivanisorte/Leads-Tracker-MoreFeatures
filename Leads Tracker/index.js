@@ -40,7 +40,7 @@ function render(leads) {
 //     console.log
 // })
 
-function delIndiv(event, i){
+function delIndiv(i){
     // console.log(event.target)
     // console.log(i)
     // console.log(myLeads)
