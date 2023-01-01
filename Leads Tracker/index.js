@@ -41,11 +41,11 @@ function render(leads) {
 // })
 
 function delIndiv(event, i){
-    console.log(event.target)
-    console.log(i)
-    console.log(myLeads)
+    // console.log(event.target)
+    // console.log(i)
+    // console.log(myLeads)
     myLeads.splice(i,1)
-    console.log(myLeads)
+    // console.log(myLeads)
     localStorage.clear()
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     render(myLeads)
