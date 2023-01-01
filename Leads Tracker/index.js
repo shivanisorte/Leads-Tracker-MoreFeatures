@@ -29,7 +29,7 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button class='del' onclick='delIndiv(event)'>-</button>
+                <button class='del' onclick='delIndiv(event,${i})'>-</button>
             </li>
         `
     }
@@ -40,8 +40,16 @@ function render(leads) {
 //     console.log
 // })
 
-function delIndiv(event){
+function delIndiv(event, i){
     console.log(event.target)
+    console.log(i)
+    console.log(myLeads)
+    myLeads.splice(i,1)
+    console.log(myLeads)
+    localStorage.clear()
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    render(myLeads)
+
 }
 
 deleteBtn.addEventListener("dblclick", function() {
